@@ -1,0 +1,68 @@
+
+  
+  nav{
+  position: relative;
+  margin: 290px auto 0;
+  height: 50px;
+  width: 500px;
+  background: gray;
+
+  border-radius: 8px;
+
+}
+
+nav a{
+  text-decoration: none;
+  z-index: 1;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+nav a:hover {
+ color: yellow;
+}
+nav .animation{
+  position: absolute;
+  bottom: 0px;
+  height: 5px;
+  z-index: 0;
+  background: hotpink;
+  width: 100px;
+  border-radius: 10px;
+ transition: all 0.5s ease;
+}
+
+a:nth-child(1){
+  width: 100px;
+  }
+  nav .start-home,a:nth-child(1):hover~.animation{
+ width: 100px;
+ left: 0;
+}
+
+
+  a:nth-child(2){
+  width: 110px;
+  }
+  nav .start-Logo,a:nth-child(2):hover~.animation{
+ width: 100px;
+ left: 110px;
+}
+
+  a:nth-child(3){
+  width: 100px;
+  }
+  nav .start-Dicas,a:nth-child(3):hover~.animation{
+ width: 100px;
+ left: 215px;
+}
+
+  a:nth-child(4){
+  width: 150px
+  }
+  nav .start-Videos,a:nth-child(4):hover~.animation{
+ width: 100px;
+ left: 347px;
+}
